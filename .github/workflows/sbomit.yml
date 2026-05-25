@@ -1,0 +1,9 @@
+name: SBOMit
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  sbomit:
+    uses: Marc-cn/sbomit-pipeline/.github/workflows/sbomit-reusable.yml@v1
